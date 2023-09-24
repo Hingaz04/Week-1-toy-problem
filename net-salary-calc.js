@@ -1,9 +1,9 @@
 function netSalary(monthlyIncome, benefits){
   
   function taxRate (){
-
+     //prompt the user to enter their monthly salary.
     let monthlyIncome = prompt('Enter monthly salary');
-
+     //Conditions for setting the tax rate
     if(monthlyIncome = 24000){
       taxRate = 0.1;
 
@@ -17,19 +17,18 @@ function netSalary(monthlyIncome, benefits){
   
   const nssfRate = 0.6; 
 
-  const grossSalary = monthlyIncome + benefits;
+  const grossSalary = monthlyIncome + benefits; //calculate gross salary
 
-  const payee = monthlyIncome * taxRate;
+  const payee = monthlyIncome * taxRate; //Calculate payee.
 
-  const nssfDeductions = monthlyIncome * nssfRate;
+  const nssfDeductions = monthlyIncome * nssfRate;// calculate the nssf deductions.
 
-  const netSalary = grossSalary - payee - nssfDeductions;
+  const netSalary = grossSalary - payee - nssfDeductions; // calculate the net salary.
 
-
+  //Create a result object to store the calculated values
   const result = {
     grossSalary: grossSalary,
     payee: payee,
-    nhifDeductions: nhifDeductions,
     nssfDeductions: nssfDeductions,
     netSalary: netSalary,
   };
