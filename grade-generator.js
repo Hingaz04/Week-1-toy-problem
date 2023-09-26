@@ -29,4 +29,3 @@ function studentGrade(){
   //Out put value.
   console.log(`The student's grade is: ${grade}`);
 }
-calculateGrade();
